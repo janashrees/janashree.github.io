@@ -84,6 +84,34 @@
       background-color: #556b2f;
       color: #ffe6f0;
     }
+    /* Clickable card wrapper */
+    .card-link {
+      display: block;
+      color: inherit;
+      text-decoration: none;
+      margin-bottom: 20px;
+    }
+
+    .card-link .project {
+      transition: transform 0.15s ease, box-shadow 0.15s ease;
+      cursor: pointer;
+   }
+
+   .card-link:hover .project {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 18px rgba(85, 107, 47, 0.18);
+    }
+
+    .card-link:focus .project {
+      outline: 3px solid rgba(85, 107, 47, 0.35);
+      outline-offset: 3px;
+   }
+
+    .view-details {
+      margin-top: 10px;
+      font-weight: bold;
+      color: #556b2f;
+  }
   </style>
 </head>
 <body>
@@ -117,22 +145,44 @@
   
 
   <section id="experience">
-  <h2>Internship Experience</h2>
-<a class="card-link" href="experience/dsrl.html">
-  <div class="project">
-    <h3>Intern – DSRL, India (Jul–Sep 2024)</h3>
-    <p>Configured ROS 2 IMU nodes on Raspberry Pi within Docker containers to enable remote data access...</p>
-    <div class="view-details">View details →</div>
-  </div>
-</a>
-  <div class="project">
-    <h3>Research Intern – University of South Florida (May 2023–Jan 2024)</h3>
-    <p>Built a data processing tool for analyzing gaseous materials, boosting efficiency by 40%. Conducted research on electronic nose technologies and supported material detection optimization through technical reporting and visualization using Office tools.</p>
-  </div>
-  <div class="project">
-    <h3>Programming Assistant Intern – PIS IT Solutions, India (Jun–Aug 2022)</h3>
-    <p>Developed an interactive “Mock Test” web platform using HTML, CSS, JavaScript, and MySQL. Enhanced UI and functionality while optimizing troubleshooting procedures, reducing resolution time and improving user engagement.</p>
-  </div>
+    <h2>Internship Experience</h2>
+
+  <!-- DSRL Internship -->
+    <a class="card-link" href="experience/dsrl.html">
+        <div class="project">
+            <h3>Intern – DSRL, India (Jul–Sep 2024)</h3>
+             <p>
+                Configured ROS 2 IMU nodes on Raspberry Pi within Docker containers to enable remote data access.
+                Integrated I2C communication into ROS 2 environment using Docker networking, ensuring real-time
+                sensor streaming for research robotics applications.
+            </p>
+            <div class="view-details">View details →</div>
+        </div>
+    </a>
+  <!-- USF Research Internship -->
+    <a class="card-link" href="experience/usf.html">
+        <div class="project">
+            <h3>Research Intern – University of South Florida (May 2023–Jan 2024)</h3>
+            <p>
+                Built a data processing tool for analyzing gaseous materials, boosting efficiency by 40%.
+                Conducted research on electronic nose technologies and supported material detection optimization
+                through technical reporting and visualization using Office tools.
+            </p>
+            <div class="view-details">View details →</div>
+        </div>
+    </a>
+  <!-- USF Research Internship -->
+    <a class="card-link" href="experience/usf.html">
+        <div class="project">
+            <h3>Research Intern – University of South Florida (May 2023–Jan 2024)</h3>
+            <p>
+                Built a data processing tool for analyzing gaseous materials, boosting efficiency by 40%.
+                Conducted research on electronic nose technologies and supported material detection optimization
+                through technical reporting and visualization using Office tools.
+            </p>
+            <div class="view-details">View details →</div>
+        </div>
+    </a>
 </section>
 
 <section id="projects">
